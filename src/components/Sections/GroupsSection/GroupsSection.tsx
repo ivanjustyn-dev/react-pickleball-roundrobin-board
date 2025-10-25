@@ -1,5 +1,5 @@
 import { Add, Close } from "@mui/icons-material";
-import { Badge, Box, Button, Card, CardActions, CardContent, CardHeader, Chip, Divider, IconButton } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, Divider, IconButton } from "@mui/material";
 import { useGameContext } from "../../GameContext";
 import { useState } from "react";
 import MovePlayersToCourtDialog from "../../DialogBox/MovePlayersToCourtDialog";
@@ -10,7 +10,7 @@ const GroupsSection = () => {
 
     const gameContext = useGameContext();
     const [isShowMovePlayersToCourtDialog, setIsShowMovePlayersToCourtDialog] = useState(false);
-    const [selectedGroup, setSelectedGroup] = useState<Group | null>(null);
+    const [selectedGroup, setSelectedGroup] = useState<Group | undefined>(undefined);
 
     return <Box
         display={"flex"}

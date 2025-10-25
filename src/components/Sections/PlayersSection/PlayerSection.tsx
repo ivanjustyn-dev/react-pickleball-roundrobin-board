@@ -1,5 +1,5 @@
 import { Add } from "@mui/icons-material";
-import { Badge, Box, Button, Card, CardActions, CardContent, CardHeader, Chip, Divider } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, Divider } from "@mui/material";
 import { useState } from "react";
 import AddPlayersDialog from "../../DialogBox/AddPlayersDialog";
 import type { Player } from "../../types";
